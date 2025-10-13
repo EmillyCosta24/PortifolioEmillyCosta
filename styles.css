@@ -1,214 +1,237 @@
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #0b0014;
-  color: #fff;
-  scroll-behavior: smooth;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #11001a 0%, #1a002a 100%);
+    color: #fff;
+    scroll-behavior: smooth;
 }
 
 .hero {
-  background: url("https://img.freepik.com/free-vector/futuristic-technology-background-with-particle-style_23-2148431265.jpg") center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  color: white;
+    background: url("https://img.freepik.com/free-vector/futuristic-technology-background-with-particle-style_23-2148431265.jpg") center/cover no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
 }
 
 .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(30, 0, 60, 0.7);
-  top: 0;
-  left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(30, 0, 60, 0.7);
+    top: 0;
+    left: 0;
 }
 
 .hero-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1;
-  width: 85%;
-  max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 85%;
+    max-width: 1200px;
 }
 
 .left-text h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  line-height: 1.2;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.2;
 }
 
 .left-text h1 span {
-  color: #ff00ff;
+    color: #ff00ff;
 }
 
+/* ======== FOTO E INFORMAÇÕES ======== */
 .info-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-  margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 10px;
 }
 
 .profile-pic {
     width: 150px;
     height: 150px;
-    border-radius: 50%; 
-    display: inline-block;
+    border-radius: 50%;
     box-shadow: 0 0 15px #ff00ff;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .profile-pic img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .right-info h2 {
-  font-size: 3.0rem;
-  font-weight: 700;
-  color: #ff00ff;
-  margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ff00ff;
+    margin: 0;
 }
 
 .right-info p {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0;
-}
-
-hr {
-  border: none;        
-  height: 2px;         
-  background-color: #ff00ff; 
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0;
 }
 
 .contact-icons {
-  align-items: center;
-  gap: 80px;
-  margin-bottom: 10px;
-} 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-top: 15px;
+}
 
 .contact-icons p {
-  color: #ffffff;
-  font-size: 1rem;
-  gap: 5px;
-  margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 1rem;
+    margin: 0;
 }
 
 .contact-icons i {
-  color: #ff00ff;
-  margin-right: 8px;
-  font-size: 1.1rem;
-}   
-
-section {
-  padding: 80px 10%;
-  text-align: center;
+    color: #ff00ff;
+    font-size: 1.1rem;
 }
 
-section h2 {
-  font-size: 2rem;
-  color: #ff00ff;
-  margin-bottom: 25px;
-  position: relative;
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ff00ff;
 }
 
-section h2::after {
-  content: '';
-  width: 60px;
-  height: 3px;
-  background: #ff00ff;
-  display: block;
-  margin: 8px auto 0;
-  border-radius: 10px;
+main section {
+    width: 85%;
+    max-width: 1200px;
+    margin: 120px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo da seção */
 }
 
-section p {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
-  color: #ddd;
+/* Conteúdo interno PADRONIZADO */
+main section .text-content {
+    flex: 1;
+    background: rgba(255, 0, 255, 0.05);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.2);
+    transition: 0.3s ease;
+    border: 2px solid #ff00ff; /* Borda visível para todos */
 }
 
-ul {
-  list-style: square;
-  text-align: left;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.8;
+main section .text-content:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.4);
+    transform: translateY(-5px); /* Efeito de flutuar para todos */
 }
 
+/* Títulos e textos GERAIS */
+main section h2 {
+    font-size: 2.3rem;
+    color: #ff00ff;
+    border-bottom: 2px solid #ff00ff;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+main section p,
+main section ul {
+    color: #ddd;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* PROJETOS (Estilo para os cards internos) */
 .projetos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .card {
-  background: #1a002a;
-  border-radius: 12px;
-  width: 300px;
-  padding-bottom: 15px;
-  box-shadow: 0 0 10px #8a2be2;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #1a002a;
+    border-radius: 20px; 
+    width: 450px;
+    padding-bottom: 15px;
+    box-shadow: 0 0 10px #8a2be2;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px #ff00ff;
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #ff00ff;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 12px 12px 0 0;
+    width: 100%;
+    border-radius: 12px 12px 0 0;
 }
 
 .card h3 {
-  color: #ff00ff;
-  margin: 15px 0 8px;
+    color: #ff00ff;
+    margin: 15px 0 8px;
 }
 
 .card p {
-  padding: 0 15px;
-  color: #ccc;
-  font-size: 0.95rem;
+    padding: 0 15px;
+    color: #ccc;
+    font-size: 0.95rem;
+    text-align: left;
 }
 
-.social-links {
-  margin-top: 30px;
-}
 
+/*BOTÕES*/
 .btn {
-  background: #ff00ff;
-  color: white;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: 0.3s;
-  display: inline-block;
+    background: #ff00ff;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
-  background: #fff;
-  color: #ff00ff;
+    background: #fff;
+    color: #ff00ff;
 }
 
+/*RODAPÉ*/
 footer {
-  background: #11001a;
-  text-align: center;
-  padding: 20px;
-  color: #aaa;
-  font-size: 0.9rem;
+    background: #11001a;
+    text-align: center;
+    padding: 20px;
+    color: #aaa;
+    font-size: 0.9rem;
 }
 
 footer strong {
-  color: #ff00ff;
+    color: #ff00ff;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 900px) {
+    main section {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    main section .text-content {
+        width: 100%;
+    }
 }
